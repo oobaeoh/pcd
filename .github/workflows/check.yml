@@ -2,7 +2,7 @@ name: Pokemon Center Drop Checker
 
 on:
   schedule:
-    - cron: "*/30 * * * *"  # run every 30 minutes
+    - cron: "*/10 * * * *"  # run every 10 minutes
   workflow_dispatch:        # allows manual run from GitHub UI
 
 jobs:
