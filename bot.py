@@ -48,3 +48,6 @@ if __name__ == "__main__":
         for item in new_items:
             print("NEW PRODUCT:", item["title"], item["link"])
             notify_discord(item)
+	if not new_items:
+   	notify_discord({"title": "TEST ALERT", "link": "https://www.pokemoncenter.com"})
+
