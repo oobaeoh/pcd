@@ -48,8 +48,3 @@ if __name__ == "__main__":
         for item in new_items:
             print("NEW PRODUCT:", item["title"], item["link"])
             notify_discord(item)
-    else:
-        # ✅ Send a test notification if nothing new was found
-        print("No new TCG items found. Sending test notification...")
-        notify_discord({"title": "TEST ALERT (bot is working ✅)", "link": "https://www.pokemoncenter.com"})
-
